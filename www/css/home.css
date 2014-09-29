@@ -1,0 +1,247 @@
+#home{
+	width: 100%;
+	height: 100%;
+}
+#content{
+	width: 100%;
+	height: 100%;
+}
+#down-content{
+	width: 100%;
+	/*height: calc( 100% - 120px );*/
+	height: 100%;
+}
+#left-bar{}
+.animate-show {
+    width: 500px;
+    height: inherit;
+    /*background-color: #195617;*/
+    background: rgba(25,86,23,1);
+	background: -moz-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(25,86,23,1)), color-stop(50%, rgba(27,99,24,1)), color-stop(51%, rgba(27,99,24,1)), color-stop(71%, rgba(35,122,32,1)), color-stop(100%, rgba(32,133,28,1)));
+	background: -webkit-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195617', endColorstr='#20851c', GradientType=1 );
+    /*background: url(../img/Big/greenLeftBar.jpg);*/
+	position: absolute;
+	z-index: 2;
+}
+.animate-showR {
+    width: 500px;
+    height: inherit;
+    /*background-color: #195617;*/
+    background: rgba(25,86,23,1);
+	background: -moz-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(25,86,23,1)), color-stop(50%, rgba(27,99,24,1)), color-stop(51%, rgba(27,99,24,1)), color-stop(71%, rgba(35,122,32,1)), color-stop(100%, rgba(32,133,28,1)));
+	background: -webkit-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195617', endColorstr='#20851c', GradientType=1 );
+    /*background: url(../img/Big/greenLeftBar.jpg);*/
+	/*position: relative;
+	float:right;*/
+	position: absolute;
+	right: 0px;
+	z-index: 5;
+}
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+	/* -webkit-transition:0.5s linear all;
+	transition:0.5s linear all;
+	remember to add this */
+	display:block!important;
+	opacity:1;
+}
+.animate-show.ng-hide {
+  opacity:0;
+}
+.animate-right-bar{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-color: #d2d5d1;
+}
+#conteiner{
+	width: 100%;
+	height:100%;
+	position: absolute;
+}
+.innerConteiner{
+	margin-top: 15px;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+    margin-right: auto;
+}
+.regionGallery{
+	width: 30%;
+	height: 200px;
+	position: relative;
+	float:left;
+	margin: 10px;
+	overflow: hidden;
+}
+.galleryItemImage{
+	width: 100%;
+	height: calc(100% - 50px);
+	position: relative;
+	float: left;
+	background-color: blue;
+	/*background:url(../img/Big/TMPimgagal.jpg);*/
+	background-size: 100% 100%;
+}
+.galleryItemImage img{
+	width: 100%;
+	height: 100%;
+}
+.gallerySmallTitlte{
+	width: 100%;
+	height: 50px;
+	background-color: #71a733;
+	color: white;
+	font-size: 14px;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+.regionListParque{
+	width: 100%;
+	height: 120px;
+	position: relative;
+	float:left;
+	overflow: hidden;
+}
+.ParquesUpTitlte{
+	width: 100%;
+	height: 120px;
+	color: white;
+	background: rgba(25,86,23,1);
+	background: -moz-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(25,86,23,1)), color-stop(50%, rgba(27,99,24,1)), color-stop(51%, rgba(27,99,24,1)), color-stop(71%, rgba(35,122,32,1)), color-stop(100%, rgba(32,133,28,1)));
+	background: -webkit-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	background: linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195617', endColorstr='#20851c', GradientType=1 );
+}
+.ParquesUpTitlte p{
+	height: 120px;
+	width: 100%;
+	text-align: center;
+	line-height: 120px;
+	font-size: 22px;
+}
+.odd{
+	background-color: #d2d5d1;
+}
+.even{
+	background-color: #ececec;
+}
+.gallergListImg{
+	position: relative;
+	float: left;
+	margin-top: 12px;
+	margin-left: 15px;
+	width: 95px;
+	height: 95px;
+	background:url(../img/Big/TMPimgagal.jpg);
+	background-size: 100% 100%;
+}
+.gallergListContent{
+	position: relative;
+	float: left;
+	width: calc(100% - 220px);
+	height: 120px;
+}
+.galleryListTitle{
+	margin: 0px;
+	margin-left:10px;
+	margin-top: 15px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 18px;
+	color:black;
+}
+.galleryListDes{
+	margin: 0px;
+	margin-left:10px;
+	margin-top: 5px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 18px;
+	color:black;
+}
+.listRightArrow{
+	position: relative;
+	float: right;
+	background:url(../img/Small/rightArrow.png);
+	background-size: 100% 100%;
+	width: 26px;
+	height: 41px;
+	margin-top: 30px;
+	margin-right: 15px;
+	z-index: 2;
+}
+.PD-upimga{
+	width: 100%;
+	height: 50%;
+	background: url(../img/Small/mainDetailParque.jpg);
+	background-size: 100% 100%;
+}
+.PD-downmap{
+	width: 100%;
+	height: calc(50% - 120px);
+	background: url(../img/Small/mapaDetailparque.jpg);
+	background-size: 100% 100%;
+}
+.tamplate{
+	width: 100%;
+	height: 100%;
+}
+/* iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	/* STYLES GO HERE */
+	#left-bar{}
+	.animate-show { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
+	.animate-showR { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
+	#right-bar{ }
+	#down-content{/*height: calc( 100% - 80px );*/ }
+	.regionGallery{	width: 42%;height: 120px; }
+	.gallerySmallTitlte{font-size: 12px; height: 30px; line-height: 30px;}
+	.ParquesUpTitlte{ height: 70px; }
+	.ParquesUpTitlte p{ line-height: 70px; }
+	.regionListParque{ height: 80px; }
+	.ParquesUpTitlte p{ height: 80px;line-height: 80px;font-size: 20px; }
+	.gallergListImg{ width: 50px;height: 50px; }
+	.gallergListContent{ height: 80px;width: calc(100% - 120px);}
+	.galleryListTitle,.galleryListDes{line-height: 20px;font-size: 12px;}
+	.listRightArrow{margin-top: 13px;}
+	.PD-downmap{ height: calc(50% -  80px);}
+	.galleryItemImage{ height: calc(100% - 30px);}
+}
+/* iphone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	/* STYLES GO HERE */
+	#left-bar{}
+	.animate-show { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
+	.animate-showR { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
+	#right-bar{ }
+	#down-content{ /*height: calc( 100% - 80px ); */}
+	.regionGallery{	width: 42%;height: 120px; }
+	.gallerySmallTitlte{font-size: 12px; height: 30px; line-height: 30px;}
+	.ParquesUpTitlte{ height: 70px; }
+	.ParquesUpTitlte p{ line-height: 70px; }
+	.regionListParque{ height: 80px; }
+	.ParquesUpTitlte p{ height: 80px;line-height: 80px;font-size: 20px; }
+	.gallergListImg{ width: 50px;height: 50px; }
+	.gallergListContent{ height: 80px;width: calc(100% - 120px);}
+	.galleryListTitle,.galleryListDes{line-height: 20px;font-size: 12px;}
+	.listRightArrow{margin-top: 13px;}
+	.PD-downmap{ height: calc(50% -  80px);}
+	.galleryItemImage{ height: calc(100% - 30px);}
+}

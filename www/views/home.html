@@ -1,0 +1,43 @@
+<div id="home" ng-controller="mainController as App">
+<!--HOME QUE LE DICEN
+<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
+			</div>
+			<div id="areaUp">
+				<div class="upSecondPart">
+					<!--<a href="#galeria" class="btn btn-success btn-lg">gallery</a>
+					<div class="btn btn-success btn-lg" ng-click="App.animateRightBar()">ddd</div>-->
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+			</div>		
+			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
+		</div>
+		<div id="down-content" >
+			<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate">
+				</div>
+			</div>
+			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
+				</div>
+			</div>
+			<!--  Region de regiones -->
+			<div id="conteiner">
+				<div class="innerConteiner">
+					
+					<div class="regionGallery" ng-repeat="item in regiones.region">
+						<a href="#gallery">
+						<div class="galleryItemImage"><img ng-src="{{item.image}}" /></div>
+						<div class="gallerySmallTitlte">{{item.name}}</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

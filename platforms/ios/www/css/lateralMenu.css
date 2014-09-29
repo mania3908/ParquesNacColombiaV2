@@ -1,0 +1,97 @@
+#lateralMenu{
+	width: inherit;
+	height: inherit;
+	z-index: 20;
+}
+#lateralMenuR{
+	width: inherit;
+	height: inherit;
+	z-index: 20;
+}
+#lateralMenu a{
+	color: white;
+	font-size: 20px;
+}
+#lateralMenuR a{
+	color: white;
+	font-size: 20px;
+}
+.op1{
+	width: 100%;
+	height: 129px;
+	border: 3px;
+	border-bottom-color: #5b9838;
+	border-bottom-style: solid;
+}
+.listImgMenu{
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+.casaop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/LogoCasa.png);
+	background-size: 100% 100%;
+}
+.agendaop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/iconoAgenda.png);
+	background-size: 100% 100%;
+}
+.fotosop{
+	height: 110px;
+	width: 110px;
+	margin-right: 5px;
+	background: url(../img/Big/iconoFotos.png);
+	background-size: 100% 100%;
+}
+.infoop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/IconMoreInfo.png);
+	background-size: 100% 100%;
+}
+.mapapop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/iconMapa.png);
+	background-size: 100% 100%;
+}
+.turismoop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/iconEcoturismo.png);
+	background-size: 100% 100%;
+}
+.galeriapop{
+	height: 110px;
+	width: 110px;
+	background: url(../img/Big/iconGaleria.png);
+	background-size: 100% 100%;
+}
+.textOpMenu{
+	position: relative;
+	float: left;
+	margin-left: 20px;
+	height: calc(100% - 50px);
+	width: calc(100% - 150px);
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 125px;
+	text-align: left;
+}
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+	/* STYLES GO HERE */
+	.op1{height: 70px;}
+	.casaop,.agendaop,.fotosop,.infoop,.mapapop,.turismoop,.galeriapop{height: 60px;width: 60px;}
+	.textOpMenu{font-size: 16px;	line-height: 60px;	width: calc(100% - 100px);}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	/* STYLES GO HERE */
+	.op1{height: 70px;}
+	.casaop,.agendaop,.fotosop,.infoop,.mapapop,.turismoop,.galeriapop{height: 60px;width: 60px;}
+	.textOpMenu{font-size: 16px;	line-height: 60px;	width: calc(100% - 100px);}
+}

@@ -1,0 +1,63 @@
+<div id="home" ng-controller="detailController as App">
+<!--HOME QUE LE DICEN
+<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
+			</div>
+			<div id="areaUp">
+				<!--<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+				<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>
+			</div>		
+			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
+		</div>
+		<div id="down-content" >
+			<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate">
+				</div>
+			</div>
+			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
+				</div>
+			</div>
+			<div class="infoFoto">
+				<img src="./img/Small/mainDetailParque.jpg" alt="img" />
+				<div class="infoTitleImg">Parque Pisba</div>
+			</div>
+			<div class="infoParCon">
+				<div class="viewportData">
+					<div class="itemViewPort">
+						<div class="itemSInfo itemInfo1"></div>
+						<p class="txtitleUP">Altura</p>
+						<p class="actualText">1000 mt</p>
+					</div>
+					<div class="itemViewPort">
+						<div class="itemSInfo itemInfo2"></div>
+						<p class="txtitleUP">Extension</p>
+						<p class="actualText">1000 hectareas</p>
+					</div>
+					<div class="itemViewPort">
+						<div class="itemSInfo itemInfo3"></div>
+						<p class="txtitleUP">Temperatura</p>
+						<p class="actualText">16 grados</p>
+					</div>
+					<div class="itemViewPort">
+						<div class="itemSInfo itemInfo4"></div>
+						<p class="txtitleUP">Fecha de creación</p>
+						<p class="actualText">1977</p>
+					</div>
+				</div>
+				<div class="viewDespInfoParque">
+					<p class="titleDescParque">Parque Pisba</p>
+					<p class="descParqueActual">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "parques": [
+    {
+      "name":"Parque1",
+      "image":"URL",
+      "description":"descriptionText",
+      "galeria":[
+                  {"title":"Title1","img" :"./img/Small/imagenesapp/1_thumb.jpg"},
+                  {"title":"Title2","img" :"./img/Small/imagenesapp/2_thumb.jpg"},
+                  {"title":"Title3","img" :"./img/Small/imagenesapp/3_thumb.jpg"},
+                  {"title":"Title1","img" :"./img/Small/imagenesapp/4_thumb.jpg"},
+                  {"title":"Title2","img" :"./img/Small/imagenesapp/5_thumb.jpg"},
+                  {"title":"Title3","img" :"./img/Small/imagenesapp/6_thumb.jpg"}
+                ]
+    },
+    {
+      "name":"Parque2",
+      "image":"URL",
+      "description":"descriptionText2222",
+      "galeria":[
+                  {"title":"Title1","img" :"./img/Small/imagenesapp/7_thumb.jpg"},
+                  {"title":"Title2","img" :"./img/Small/imagenesapp/8_thumb.jpg"},
+                  {"title":"Title3","img" :"./img/Small/imagenesapp/9_thumb.jpg"}
+                ]
+    }
+  ]
+}

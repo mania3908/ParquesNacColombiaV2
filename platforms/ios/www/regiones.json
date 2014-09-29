@@ -1,0 +1,10 @@
+{
+  "region": [
+    {"name":"Region Amazonia","image":"URL"},
+    {"name":"Region Andes Nororientales","image":"URL"},
+    {"name":"Region Andes Occidentales","image":"URL"},
+    {"name":"Region Caribe","image":"URL"},
+    {"name":"Region Orinoquia","image":"URL"},
+    {"name":"Region Pacifico","image":"URL"}
+  ]
+}

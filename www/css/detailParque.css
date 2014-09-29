@@ -1,0 +1,130 @@
+.infoFoto{
+	width: 100%;
+	height: 300px;
+}
+.infoFoto img{
+	width: inherit;
+	height: inherit;
+	position: relative;
+	float: left;
+}	
+.infoTitleImg{
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	font-size: 18px;
+	position: relative;
+	float:left;
+	margin-top: -30px;
+	margin-left: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+.infoParCon{
+	height: auto;
+	width: 100%;
+}
+.viewportData{
+	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
+	-moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
+	box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
+	width: 30%;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	float: right;
+}
+.itemViewPort{
+	width: 95%;
+	height: 50px;
+	margin-top: 20px;
+	/*background-color: blue;*/
+	position: relative;
+	float: left;
+	margin-left: 7px;
+}
+.viewDespInfoParque{
+	width: 65%;
+	height: auto;
+	/*background-color: red;*/
+}
+.titleDescParque{
+	font-size: 20px;
+	color:#221810;
+	font-weight: bold;
+	height: 25px;
+	line-height: 25px;
+	margin: 0px;
+	margin-top: 15px;
+}
+.descParqueActual{
+	margin: 0px;
+	margin-top:20px;
+	font-size: 14px;
+	color:#221810;
+	font-weight: normal;
+}
+.itemSInfo{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+}
+.itemInfo1{
+	background:url(../img/Small/datasheet/mountains.png);
+	background-size: 100% 100%;
+}
+.itemInfo2{
+	background:url(../img/Small/datasheet/ext.png);
+	background-size: 100% 100%;
+}
+.itemInfo3{
+	background:url(../img/Small/datasheet/temp.png);
+	background-size: 100% 100%;
+}
+.itemInfo4{
+	background:url(../img/Small/datasheet/fecha.png);
+	background-size: 100% 100%;
+}
+.txtitleUP{
+	width: calc(100% - 65px);
+	line-height: 20px;
+	color:#221810;
+	font-size: 18px;
+	text-align: left;
+	height: 20px;
+	text-overflow:ellipsis;
+	position: relative;
+	float:left;
+	margin: 0px;
+	margin-left: 10px;
+}
+.actualText{
+	width: calc(100% - 65px);
+	line-height: 20px;
+	color:#221810;
+	font-size: 18px;
+	text-align: left;
+	height: 20px;
+	text-overflow:ellipsis;
+	position: relative;
+	float: left;
+	margin: 0px;
+	margin-left: 10px;
+}
+/* iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	.infoFoto{ height: 150px; }
+	.infoTitleImg{ font-size: 12px; }
+	.infoParCon{ height: calc(100%  -  150px); }
+	.viewportData{ width: 90%; position: static; float:none; }
+	.viewDespInfoParque{ width: 100%;position: relative; float:right; }
+}
+/* iphone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	.infoFoto{ height: 150px; }
+	.infoTitleImg{ font-size: 12px; }
+	.infoParCon{ height: calc(100%  -  150px); }
+	.viewportData{ 	width: 90%; position: static; float: none; }  
+	.viewDespInfoParque{ width: 100%; position: relative; float: right; }
+}

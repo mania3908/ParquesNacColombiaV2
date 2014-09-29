@@ -1,0 +1,13 @@
+{
+  "parques": [
+    {"name":"Parque1","image":"URL","description":"descriptionText"},
+    {"name":"Parque2","image":"URL","description":"descriptionText2222"},
+    {"name":"Parque3","image":"URL","description":"descriptionTex333t"},
+    {"name":"Parque4","image":"URL","description":"descriptionText5"},
+    {"name":"Parque5","image":"URL","description":"descriptionText6"},
+    {"name":"Parque6","image":"URL","description":"descriptionText77777777"},
+    {"name":"Parque7","image":"URL","description":"descriptionText88"},
+    {"name":"Parque8","image":"URL","description":"descriptionTex99t"},
+    {"name":"Parque9","image":"URL","description":"descriptionText1111000"}
+  ]
+}

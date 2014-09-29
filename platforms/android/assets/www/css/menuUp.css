@@ -1,0 +1,71 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#upMenu{
+	width: 100%;
+	height: 120px;
+	background-color: #71a733;
+}
+#btnUp{
+	height: inherit;
+	width: 100px;
+	position: relative;
+	float: left;
+}
+.imgBtnUp{
+	background: url(../img/btnSideBar.png);
+	background-size: 100% 100%;
+	width: 44px;
+	height: 47px;
+	margin: auto;
+	margin-top: 38px;
+}
+#areaUp{
+	height: inherit;
+	width: calc(100% - 100px);
+	position: relative;
+	float: left;
+}
+.upSecondPart{
+	width: 350px;
+	padding-top: 15px;
+	height: inherit;
+	margin: auto;
+}
+.logo{
+	background: url(../img/Big/logoReal.png);
+	background-size: 100% 100%;
+	width: 72px;
+	height: 90px;
+	position: relative;
+	float:left;
+}
+.mainTitle{
+	color: white;
+	padding-top: 12px;
+	font-size: 20px;
+	width: 220px;
+	position: relative;
+	float:left;
+	text-align: left;
+	margin-left: 10px;
+	font-weight: bold;
+}
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	#upMenu{ height: 80px; }
+	#btnUp{ width: 80px; }
+	.imgBtnUp{ width: 24px;height: 27px; }
+	.logo{ width: 36px;height: 45px; 	background: url(../img/Small/logoReal.png);}
+	.mainTitle{ padding-top: 4px;font-size: 12px;width: 135px; }
+	.upSecondPart{padding-top: 25px;}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	#upMenu{ height: 80px; }
+	#btnUp{ width: 80px; }
+	.imgBtnUp{ width: 24px;height: 27px; }
+	.logo{ width: 36px;height: 45px; 	background: url(../img/Small/logoReal.png);}
+	.mainTitle{ padding-top: 4px;font-size: 12px;width: 135px; }
+	.upSecondPart{padding-top: 25px;}
+}

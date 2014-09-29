@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class com.electronicvideogame.parnac.ParquesNacionales { <init>(...); }
+

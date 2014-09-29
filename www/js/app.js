@@ -98,6 +98,12 @@ forrestApp.controller('galeriaController', function($scope,$http) {
 //misfotosController
 forrestApp.controller('misfotosController', function($scope,$http) {
     $scope.pageClass = 'page-misfotos';
+    this.animateLeftBar = function() { $scope.isHidden = !$scope.isHidden; }
+
+    $http.get('misfotos.json').success (function(data){
+        $scope.misFotos = data;
+      //  console.log(data);
+    });
 });
 
 //misfotosController

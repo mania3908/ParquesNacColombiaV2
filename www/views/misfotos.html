@@ -1,4 +1,4 @@
-<div id="home" ng-controller="mainController as App">
+<div id="home" ng-controller="misfotosController as App">
 <!--HOME QUE LE DICEN
 <a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 	<div id="content" >
@@ -26,7 +26,11 @@
 			</div>
 			<!--  Region de regiones -->
 			<div id="conteiner">
-				<img src="./img/misfotosBack.jpg" style="width:100%;height:100%;"/>
+				<div class="subTitleMain">Mis Fotos</div>
+				<!--<img src="./img/misfotosBack.jpg" style="width:100%;height:100%;"/>-->
+				<div ng-class="{fotoBigMisFotos:$first}" class="contMisFotos" ng-repeat="item in misFotos.misfotos">
+					<img  ng-src="{{item.image}}" alt="thumb" />
+				</div>
 			</div>
 		</div>
 	</div>

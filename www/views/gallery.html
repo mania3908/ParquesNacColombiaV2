@@ -33,7 +33,7 @@
 						<div class="regionListParque" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="item in parques.parques">
 							<div class="listRightArrow"></div>
 
-							<div class="gallergListImg"></div>
+							<div class="gallergListImg"><img ng-src="{{item.image}}" alt="thumb" /></div>
 							<div class="gallergListContent">
 								<p class="galleryListTitle">{{item.name}}</p>
 								<p class="galleryListDes">{{item.description}}</p>

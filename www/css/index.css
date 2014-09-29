@@ -23,7 +23,7 @@ body         { margin: 0px;padding: 0px;}
 .page-detailparqueMap { background:#d2d5d1; color:#a55400; }
 
 .page-galeria { background:#d2d5d1; color:#a55400; }
-
+.page-misfotos{ background:#d2d5d1; color:#a55400; }
 
 /* ANIMATIONS
 ============================================================================= */
@@ -85,6 +85,20 @@ body         { margin: 0px;padding: 0px;}
     animation:slideOutLeft 0.5s both ease-in;   
 }
 .page-detailparqueMap.ng-enter        {  
+   /*  -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;    */
+    -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;  
+}
+/* mis fotos ------------------------ */
+.page-misfotos.ng-leave        {
+     -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-misfotos.ng-enter        {  
    /*  -webkit-animation:slideInRight 0.5s both ease-in;
     -moz-animation:slideInRight 0.5s both ease-in;
     animation:slideInRight 0.5s both ease-in;    */

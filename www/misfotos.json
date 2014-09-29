@@ -1,0 +1,9 @@
+{
+  "misfotos": [
+    {"title":"Mi foto1","image":"./img/Small/imagenesapp/1_thumb.jpg"},
+   	{"title":"Mi foto2","image":"./img/Small/imagenesapp/2_thumb.jpg"},
+    {"title":"Mi foto3","image":"./img/Small/imagenesapp/3_thumb.jpg"},
+    {"title":"Mi foto4","image":"./img/Small/imagenesapp/4_thumb.jpg"},
+    {"title":"Mi foto5","image":"./img/Small/imagenesapp/5_thumb.jpg"}
+  ]
+}

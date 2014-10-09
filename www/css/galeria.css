@@ -82,6 +82,7 @@
 	.filaGaleria{height: 110px;}
 	.galeriaThumbImg{ width: 90px;height: 90px; }
 	.galeriaGreenTitle{ height: 30px;margin-top: -30px;line-height: 30px;font-size: 12px; }
+	.largeImg{height: 80%;}
 }
 
 /* iphone 4 */
@@ -89,4 +90,5 @@
 	.filaGaleria{height: 110px;}
 	.galeriaThumbImg{ width: 90px;height: 90px; }
 	.galeriaGreenTitle{ height: 30px;margin-top: -30px;line-height: 30px;font-size: 12px; }
+	.largeImg{height: 80%;}
 }

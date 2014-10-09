@@ -1,0 +1,52 @@
+<div id="home" ng-controller="detailparqueEcoturismosController as App">
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgReturnUp" ng-click="back()" ></div>
+			</div>
+			<div id="areaUp">
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+			</div>	
+			<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>	
+		</div>
+		<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate">
+				</div>
+			</div>
+			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
+				</div>
+			</div>
+		<div id="down-content" style="height:calc(100% - 80px)">
+			<div class="conteinerMap">
+				<div class="PD-upimga">
+					<img ng-src="{{parqueDetailImage}}" alt="image" />
+					<div class="infoTitleImg">{{parqueNameDetail}}</div>
+				</div>
+				<div class="PD-downmap">
+					<div class="viewportData2">
+						<div class="itemViewPort2">
+							<p class="txtitleUP SecondTitleDetail">Senderismo y Escala</p><br/><br/>
+							<p class="actualText2">{{parqueDetailroads}}</p>
+						</div>
+						<br/><br/>
+						<div class="itemViewPort2">
+							<p class="txtitleUP SecondTitleDetail">Observación de Aves</p><br/><br/>
+							<p class="actualText2">{{parqueDetailbirds}}</p>
+						</div>
+						<br/><br/>
+						<div class="itemViewPort2">
+							<p class="txtitleUP SecondTitleDetail">Zonas de camping</p><br/><br/>
+							<p class="actualText2">{{parqueDetailcamping}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+

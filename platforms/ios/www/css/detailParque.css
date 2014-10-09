@@ -19,33 +19,66 @@
 	margin-left: 15px;
 	color: white;
 	text-transform: uppercase;
+	font-weight: bolder;
 }
 .infoParCon{
-	height: auto;
+	height: 100%;
 	width: 100%;
+	overflow-y: scroll;
 }
 .viewportData{
-	-webkit-box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
-	-moz-box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
-	box-shadow: 5px 5px 15px 3px rgba(0,0,0,1);
-	width: 30%;
-	height: 300px;
+	width: calc(100% - 80px);
+	height: 100%;
 	margin: auto;
 	position: relative;
-	float: right;
+	float: left;
+	margin-left: 80px;
+}
+.viewportData2{
+	width: calc(100% - 10px);
+	height: 100%;
+	margin: auto;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	overflow-y:scroll; 
+}
+.titleDatosGen{
+	text-align: left;
+	padding-left: 20px;
+	font-weight: bolder;
+	color: black;
+	font-size: 20px;
+	margin:10px 0px;
 }
 .itemViewPort{
 	width: 95%;
-	height: 50px;
+	height: auto;
 	margin-top: 20px;
 	/*background-color: blue;*/
 	position: relative;
 	float: left;
-	margin-left: 7px;
+	margin-left: 80px;
+}
+.itemViewPort2{
+	width: 95%;
+	height: auto;
+	margin-top: 20px;
+	/*background-color: blue;*/
+	position: relative;
+	float: left;
+	margin-left: 20px;
+}
+.SecondTitleDetail{
+	text-transform: uppercase;
+	font-weight: bolder;
 }
 .viewDespInfoParque{
-	width: 65%;
+	width: 95%;
 	height: auto;
+	text-align: justify;
+	padding-left: auto;
+	font-weight: lighter;
 	/*background-color: red;*/
 }
 .titleDescParque{
@@ -56,17 +89,20 @@
 	line-height: 25px;
 	margin: 0px;
 	margin-top: 15px;
+	padding-left: 10px;
 }
 .descParqueActual{
 	margin: 0px;
 	margin-top:20px;
 	font-size: 14px;
 	color:#221810;
-	font-weight: normal;
+	font-weight: lighter;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 .itemSInfo{
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	position: relative;
 	float: left;
 }
@@ -98,6 +134,7 @@
 	float:left;
 	margin: 0px;
 	margin-left: 10px;
+	margin-top: -7px;
 }
 .actualText{
 	width: calc(100% - 65px);
@@ -105,26 +142,63 @@
 	color:#221810;
 	font-size: 18px;
 	text-align: left;
-	height: 20px;
+	height: auto;
 	text-overflow:ellipsis;
 	position: relative;
 	float: left;
 	margin: 0px;
 	margin-left: 10px;
 }
+.actualText2{
+	width: calc(100% - 5px);
+	line-height: 20px;
+	color:#221810;
+	font-size: 18px;
+	text-align: left;
+	height: auto;
+	text-overflow:ellipsis;
+	position: relative;
+	float: left;
+	margin: 0px;
+	margin-left: 10px;
+}
+.down-contentMap{
+	width: 100%;
+	height: calc(100%  - 80px);
+}
+.conteinerMap{
+	width: 100%;
+	height: 100%;
+}
+.imgReturnUp{
+	background: url("../img/Small/backArrow.png") no-repeat center left;
+	background-size: 100% 100%;
+	width: 17px;
+	height: 32px;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 24px;
+}
 /* iphone 5 */
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
 	.infoFoto{ height: 150px; }
 	.infoTitleImg{ font-size: 12px; }
-	.infoParCon{ height: calc(100%  -  150px); }
-	.viewportData{ width: 90%; position: static; float:none; }
-	.viewDespInfoParque{ width: 100%;position: relative; float:right; }
+	.infoParCon{ height: 100% }
+	.viewportData{ width: 90%; position: static; float:none; margin-left: 20px;}
+	.viewDespInfoParque{ width: 100%;position: relative; float:left; }
+	.imgReturnUp{	margin-top: 30px;}
+	.viewportData p{ font-size: 12px;}  
+	.itemViewPort{margin-top: 13px;}
 }
 /* iphone 4 */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
 	.infoFoto{ height: 150px; }
 	.infoTitleImg{ font-size: 12px; }
-	.infoParCon{ height: calc(100%  -  150px); }
+	.infoParCon{ height: 100% }
 	.viewportData{ 	width: 90%; position: static; float: none; }  
-	.viewDespInfoParque{ width: 100%; position: relative; float: right; }
+	.viewDespInfoParque{ width: 100%; position: relative; float: left; }
+	.imgReturnUp{	margin-top: 30px;}
+	.viewportData p{ font-size: 12px;}  
+	.itemViewPort{margin-top: 13px;}
 }

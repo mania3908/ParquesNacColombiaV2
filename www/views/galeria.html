@@ -1,20 +1,14 @@
 <div id="home" ng-controller="galeriaController as App">
-<!--HOME QUE LE DICEN
-<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 	<div id="content" >
 		<div id="upMenu">
-			<div id="btnUp">
-				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
-			</div>
+			<div id="btnUp"><div class="imgBtnUp" ng-click="App.animateLeftBar()"></div></div>
 			<div id="areaUp">
-				<!--<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 				<div class="upSecondPart">
 					<div class="logo"></div>
 					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
 				</div>
-				<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>
-			</div>		
-			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
+			</div>	
+			<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>	
 		</div>
 		<div id="down-content" >
 			<div id="left-bar" class="animate-show" ng-show="isHidden" >
@@ -25,17 +19,22 @@
 				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
 				</div>
 			</div>
-			<!--  Region de regiones -->
-			<div id="conteiner">
-				<!--<img src="./img/galeria.jpg" style="width:100%;height:100%;"/>-->
+			<div id="conteiner" style="overflow:hidden">
 
-				<div class="filaGaleria" ng-repeat="item in galerias.parques">
-					<div class="galeriaThumbImg" ng-repeat="item2 in galerias.parques[$index].galeria">
+				<!--  -->
+				<div class="filaGaleria" ng-repeat="item in galerias.parques" ng-swipe-left="swipeDir='moveLeft'"  ng-class="swipeDir">
+					<div class="galeriaThumbImg" ng-swipe-left="swipeDir='moveLeft'" ng-repeat="item2 in galerias.parques[$index].galeria" 
+					ng-click="App.setLargImg(item2.img)">
 						<img ng-src="{{item2.img}}" alt="thumb" />
-						<div ng-class="{galeriaGreenTitle:$first}" ng-show="$first">{{item.name}}</div>
+						<div ng-class="{galeriaGreenTitle:$first}" ng-show="$first">{{item2.name}}</div>
 					</div>	
 				</div>
+				
 			</div>
+
 		</div>
 	</div>
+	<div ng-show="zoomImg" class="largeImg" ng-click="App.closeLargeImg()">
+					<img ng-src="{{largeImg}}" alt="large" />
+				</div>
 </div>

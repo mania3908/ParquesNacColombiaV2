@@ -8,10 +8,16 @@
 }
 #down-content{
 	width: 100%;
-	/*height: calc( 100% - 120px );*/
+	/*height: calc( 100% - 120px );
+	height: 100%;*/
+	height: auto;
+}
+#left-bar{
 	height: 100%;
 }
-#left-bar{}
+#right-bar{
+	height: 100%;
+}
 .animate-show {
     width: 500px;
     height: inherit;
@@ -67,7 +73,7 @@
 }
 #conteiner{
 	width: 100%;
-	height:100%;
+	height:auto;
 	position: absolute;
 }
 .innerConteiner{
@@ -82,7 +88,7 @@
 	height: 200px;
 	position: relative;
 	float:left;
-	margin: 10px;
+	margin: 10px 0px 10px 10px;
 	overflow: hidden;
 }
 .galleryItemImage{
@@ -91,8 +97,12 @@
 	position: relative;
 	float: left;
 	background-color: blue;
-	background:url(../img/Big/TMPimgagal.jpg);
+	/*background:url(../img/Big/TMPimgagal.jpg);*/
 	background-size: 100% 100%;
+}
+.galleryItemImage img{
+	width: 100%;
+	height: 100%;
 }
 .gallerySmallTitlte{
 	width: 100%;
@@ -114,23 +124,37 @@
 }
 .ParquesUpTitlte{
 	width: 100%;
-	height: 120px;
+	height: 80px;
 	color: white;
-	background: rgba(25,86,23,1);
-	background: -moz-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
-	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(25,86,23,1)), color-stop(50%, rgba(27,99,24,1)), color-stop(51%, rgba(27,99,24,1)), color-stop(71%, rgba(35,122,32,1)), color-stop(100%, rgba(32,133,28,1)));
-	background: -webkit-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
-	background: -o-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
-	background: -ms-linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
-	background: linear-gradient(45deg, rgba(25,86,23,1) 0%, rgba(27,99,24,1) 50%, rgba(27,99,24,1) 51%, rgba(35,122,32,1) 71%, rgba(32,133,28,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195617', endColorstr='#20851c', GradientType=1 );
+	background: #598629; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #598629 0%, #206d1c 50%, #206d1c 51%, #194210 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#598629), color-stop(50%,#206d1c), color-stop(51%,#206d1c), color-stop(100%,#194210)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #598629 0%,#206d1c 50%,#206d1c 51%,#194210 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #598629 0%,#206d1c 50%,#206d1c 51%,#194210 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #598629 0%,#206d1c 50%,#206d1c 51%,#194210 100%); /* IE10+ */
+	background: linear-gradient(45deg, #598629 0%,#206d1c 50%,#206d1c 51%,#194210 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#598629', endColorstr='#194210',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .ParquesUpTitlte p{
-	height: 120px;
+	height: 80px;
 	width: 100%;
 	text-align: center;
-	line-height: 120px;
+	line-height: 80px;
 	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0px;
+	padding-left: 55px;
+}
+.ParquesUpTitlte span{
+	background: url("../img/Small/backArrow.png") no-repeat center left;
+	background-size: 100% 100%;
+	width: 17px;
+	height: 32px;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 24px;
 }
 .odd{
 	background-color: #d2d5d1;
@@ -145,8 +169,13 @@
 	margin-left: 15px;
 	width: 95px;
 	height: 95px;
-	background:url(../img/Big/TMPimgagal.jpg);
-	background-size: 100% 100%;
+	border: 3px;
+	border-style: solid;
+	border-color: white;
+}
+.gallergListImg img{
+	width: 100%;
+	height: 100%;
 }
 .gallergListContent{
 	position: relative;
@@ -157,7 +186,7 @@
 .galleryListTitle{
 	margin: 0px;
 	margin-left:10px;
-	margin-top: 15px;
+	margin-top: 20px;
 	text-align: left;
 	line-height: 30px;
 	font-size: 18px;
@@ -186,14 +215,22 @@
 .PD-upimga{
 	width: 100%;
 	height: 50%;
-	background: url(../img/Small/mainDetailParque.jpg);
-	background-size: 100% 100%;
+	/*background: url(../img/Small/mainDetailParque.jpg);
+	background-size: 100% 100%;*/
+}
+.PD-upimga img{
+	width: 100%;
+	height: 100%;
 }
 .PD-downmap{
 	width: 100%;
-	height: calc(50% - 120px);
-	background: url(../img/Small/mapaDetailparque.jpg);
-	background-size: 100% 100%;
+	height: 50%;
+	/*background: url(../img/Small/mapaDetailparque.jpg);
+	background-size: 100% 100%;*/
+}
+.PD-downmap img{
+	height: 100%;
+	width: 100%;
 }
 .tamplate{
 	width: 100%;
@@ -207,17 +244,21 @@
 	.animate-showR { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
 	#right-bar{ }
 	#down-content{/*height: calc( 100% - 80px );*/ }
-	.regionGallery{	width: 42%;height: 120px; }
+	.regionGallery{	width: 44%;height: 135px; }
 	.gallerySmallTitlte{font-size: 12px; height: 30px; line-height: 30px;}
-	.ParquesUpTitlte{ height: 70px; }
-	.ParquesUpTitlte p{ line-height: 70px; }
+	
 	.regionListParque{ height: 80px; }
-	.ParquesUpTitlte p{ height: 80px;line-height: 80px;font-size: 20px; }
+
+	.ParquesUpTitlte{ height: 60px; }
+
+	.ParquesUpTitlte p{ height: 60px;line-height: 60px;font-size: 20px; }
+	.ParquesUpTitlte span{ margin-top: 14px; }
 	.gallergListImg{ width: 50px;height: 50px; }
 	.gallergListContent{ height: 80px;width: calc(100% - 120px);}
+	.galleryListTitle{ margin-top: 15px; }
 	.galleryListTitle,.galleryListDes{line-height: 20px;font-size: 12px;}
 	.listRightArrow{margin-top: 13px;}
-	.PD-downmap{ height: calc(50% -  80px);}
+	.PD-downmap{ height: 50%;}
 	.galleryItemImage{ height: calc(100% - 30px);}
 }
 /* iphone 4 */
@@ -228,16 +269,19 @@
 	.animate-showR { width: 200px;    /*background: url(../img/Small/greenLeftBar.jpg);*/}
 	#right-bar{ }
 	#down-content{ /*height: calc( 100% - 80px ); */}
-	.regionGallery{	width: 42%;height: 120px; }
+	.regionGallery{	width: 43%;height: 135px; }
 	.gallerySmallTitlte{font-size: 12px; height: 30px; line-height: 30px;}
-	.ParquesUpTitlte{ height: 70px; }
-	.ParquesUpTitlte p{ line-height: 70px; }
 	.regionListParque{ height: 80px; }
-	.ParquesUpTitlte p{ height: 80px;line-height: 80px;font-size: 20px; }
+
+	.ParquesUpTitlte{ height: 60px; }
+
+	.ParquesUpTitlte p{ height: 60px;line-height: 60px;font-size: 20px; }
+	.ParquesUpTitlte span{ margin-top: 14px; }
 	.gallergListImg{ width: 50px;height: 50px; }
 	.gallergListContent{ height: 80px;width: calc(100% - 120px);}
+	.galleryListTitle{ margin-top: 15px; }
 	.galleryListTitle,.galleryListDes{line-height: 20px;font-size: 12px;}
 	.listRightArrow{margin-top: 13px;}
-	.PD-downmap{ height: calc(50% -  80px);}
+	.PD-downmap{ height: 50%}
 	.galleryItemImage{ height: calc(100% - 30px);}
 }

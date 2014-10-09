@@ -1,10 +1,10 @@
 {
   "region": [
-    {"name":"Region Amazonia","image":"URL"},
-    {"name":"Region Andes Nororientales","image":"URL"},
-    {"name":"Region Andes Occidentales","image":"URL"},
-    {"name":"Region Caribe","image":"URL"},
-    {"name":"Region Orinoquia","image":"URL"},
-    {"name":"Region Pacifico","image":"URL"}
+    {"name":"Region Amazonia","image":"./img/Small/imagenesapp/1_thumb.jpg"},
+    {"name":"Region Andes Nororientales","image":"./img/Small/imagenesapp/2_thumb.jpg"},
+    {"name":"Region Andes Occidentales","image":"./img/Small/imagenesapp/3_thumb.jpg"},
+    {"name":"Region Caribe","image":"./img/Small/imagenesapp/4_thumb.jpg"},
+    {"name":"Region Orinoquia","image":"./img/Small/imagenesapp/5_thumb.jpg"},
+    {"name":"Region Pacifico","image":"./img/Small/imagenesapp/6_thumb.jpg"}
   ]
 }

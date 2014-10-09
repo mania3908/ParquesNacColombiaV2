@@ -1,0 +1,47 @@
+<div id="home" ng-controller="detailparqueServicesController as App">
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgReturnUp" ng-click="back()" ></div>
+			</div>
+			<div id="areaUp">
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+			</div>	
+			<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>	
+		</div>
+		<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate">
+				</div>
+			</div>
+			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
+				</div>
+			</div>
+		<div id="down-content" style="height:calc(100% - 80px)">
+			<div class="conteinerMap">
+				<div class="PD-upimga">
+					<img ng-src="{{parqueDetailImage}}" alt="image" />
+					<div class="infoTitleImg">{{parqueNameDetail}}</div>
+				</div>
+				<div class="PD-downmap">
+					<div class="viewportData2">
+						<div class="itemViewPort2">
+							<p class="txtitleUP SecondTitleDetail">Valor de Ingreso P/P</p><br/><br/>
+							<p class="actualText2">{{parqueDetailparkValue}}</p>
+						</div>
+						<br/><br/>
+						<div class="itemViewPort2">
+							<p class="txtitleUP SecondTitleDetail">Cómo llegar?</p><br/><br/>
+							<p class="actualText2">{{parqueDetailgetThere}}</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

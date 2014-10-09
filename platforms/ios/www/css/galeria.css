@@ -5,6 +5,7 @@
 	overflow-y:hidden;
 	overflow-x: scroll;
 	margin-top: 10px;
+	position: relative
 }
 .galeriaThumbImg{
 	width:150px;
@@ -32,6 +33,49 @@
 }
 .galeriaGreenTitleNot{
 	display: none;	
+}
+.largeImg{
+	width: 90%;
+	height: 85%;
+	border-style: solid;
+	border-width:5px;
+	border-color: white;
+	position: absolute;
+	/* z-index: 100; */
+	top: 90px;
+	left: 5%;
+}
+.largeImg img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.moveLeft{
+  -moz-animation: 2s firstAnimation;
+  -o-animation: 2s firstAnimation;
+  -webkit-animation: 2s firstAnimation;
+  animation: 2s firstAnimation;
+}
+
+@keyframes firstAnimation {
+  0% {
+    left: 0px
+  }
+  100% {
+    left: -50px
+  }
+}
+/* For Chrome and Safari */
+@-webkit-keyframes firstAnimation {
+  /* from is equivalent to 0% */
+  from {
+     left: 0px
+  }
+  /* from is equivalent to 100% */
+  to {
+    left: -50px
+  }
 }
 /* iphone 5 */
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {

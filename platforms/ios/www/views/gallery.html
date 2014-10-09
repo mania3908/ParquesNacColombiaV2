@@ -1,21 +1,30 @@
 <div id="home" ng-controller="galleryController as App">
-<!--GALLERY QUE LE DICEN
-<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 	<div id="content" >
 		<div id="upMenu">
-			<div id="btnUp">
-				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
-			</div>
+			<div id="btnUp"><div class="imgBtnUp" ng-click="App.animateLeftBar()"></div></div>
 			<div id="areaUp">
-			<!--<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
-			<div class="upSecondPart">
-				<div class="logo"></div>
-				<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
-			</div>
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
 			</div>		
-			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
 		</div>
 		<div id="down-content" >
+			<div id="conteiner">
+				<div class="ParquesUpTitlte" ng-click="App.goBack()"><span></span><p>{{NameRegionCurrent}}</p></div>
+				<div class="innerConteiner">
+					<!--<a href="#detailParque">-->
+						<div class="regionListParque" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="item in parques.parques" ng-click="App.GotoDetailsParque(item.id)">
+							<div class="listRightArrow"></div>
+							<div class="gallergListImg" ><img ng-src="{{item.image}}" alt="thumb" /></div>
+							<div class="gallergListContent">
+								<p class="galleryListTitle">{{item.name}}</p>
+								<p class="galleryListDes">{{item.description}}</p>
+							</div>
+						</div>
+					<!--</a>-->
+				</div>
+			</div>
 			<div id="left-bar" class="animate-show" ng-show="isHidden" >
 				<div ng-include="'views/lateralMenu.html'" class="tamplate">
 				</div>
@@ -24,31 +33,6 @@
 				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
 				</div>
 			</div>
-			<!--  Region de regiones -->
-			<div id="conteiner">
-				<div class="ParquesUpTitlte"><div></div><p>Parque<p></div>
-
-				<div class="innerConteiner">
-					<a href="#detailParque" >
-						<div class="regionListParque" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="item in parques.parques">
-							<div class="listRightArrow"></div>
-
-							<div class="gallergListImg"></div>
-							<div class="gallergListContent">
-								<p class="galleryListTitle">{{item.name}}</p>
-								<p class="galleryListDes">{{item.description}}</p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
-
-<!--<div id="gallery">
-Gallery QUE LE DICEN
-
-
-<a href="#" class="btn btn-primary btn-lg">Home</a>
-</div>-->

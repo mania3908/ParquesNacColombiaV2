@@ -1,8 +1,8 @@
 
 /* BASE STYLES
 ============================================================================= */
-html         { overflow-y:hidden; }
-body         { margin: 0px;padding: 0px;}
+html         { overflow-y:hidden; background:#d2d5d1;}
+body         { margin: 0px;padding: 0px;background:#d2d5d1;}
 .page        { 
     bottom:0; 
     /*  padding-top:200px;*/
@@ -10,20 +10,23 @@ body         { margin: 0px;padding: 0px;}
     text-align:center;
     top:0;  
     width:100%; 
-    height:100%; 
+    height:auto; 
 }
 .page h1    { font-size:60px; }
 .page a     { margin-top:50px; }
-#about      { cposition:absolute; text-align:center; top:50px; width:100%; }
+#about      { position:absolute; text-align:center; top:50px; width:100%; }
 /* PAGES
 ============================================================================= */
 .page-home      { background:#d2d5d1; }
 .page-gallery     { background:#d2d5d1; color:#a55400; }
-.page-detailparque { background:#d2d5d1; color:#a55400; }
+.page-detailparque { background:#d2d5d1; color:#a55400; overflow: hidden; }
 .page-detailparqueMap { background:#d2d5d1; color:#a55400; }
 
-.page-galeria { background:#d2d5d1; color:#a55400; }
-
+.page-galeria { background:#d2d5d1; color:#a55400; overflow: hidden; }
+.page-misfotos{ background:#d2d5d1; color:#a55400; overflow: hidden; }
+.page-takephoto{ background:#d2d5d1; color:#a55400; overflow: hidden; }
+.page-detailparqueDatosGen{ background:#d2d5d1; color:#a55400; overflow: hidden; }
+.page-detailparqueServices{ background:#d2d5d1; color:#a55400; overflow: hidden; }
 
 /* ANIMATIONS
 ============================================================================= */
@@ -85,6 +88,57 @@ body         { margin: 0px;padding: 0px;}
     animation:slideOutLeft 0.5s both ease-in;   
 }
 .page-detailparqueMap.ng-enter        {  
+   /*  -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;    */
+    -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;  
+}
+/* mis fotos ------------------------ */
+.page-misfotos.ng-leave        {
+     -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-misfotos.ng-enter        {  
+   /*  -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;    */
+    -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;  
+}
+/* toma fotos ------------------------ */
+.page-takephoto.ng-leave        {
+     -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-takephoto.ng-enter        {  
+    -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;  
+}
+
+/* detail datos generales ------------------------ */
+.page-detailparqueDatosGen.ng-leave        {
+     -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-detailparqueDatosGen.ng-enter        {  
+    -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;  
+}
+/* detail parque detailparqueServices------------------------ */
+.page-detailparqueServices.ng-leave        {
+     -webkit-animation:slideOutLeft 0.5s both ease-in;
+    -moz-animation:slideOutLeft 0.5s both ease-in;
+    animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-detailparqueServices.ng-enter        {  
    /*  -webkit-animation:slideInRight 0.5s both ease-in;
     -moz-animation:slideInRight 0.5s both ease-in;
     animation:slideInRight 0.5s both ease-in;    */

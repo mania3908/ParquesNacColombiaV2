@@ -1,0 +1,29 @@
+<div id="home" ng-controller="takephotoController as App">
+<!--CAMERA QUE LE DICEN <a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
+			</div>
+			<div id="areaUp">
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+			</div>		
+		</div>
+		<div id="down-contentPhoto" >
+			<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate"></div>
+			</div>
+			<div class="backFondoTakePhoto">
+				<div class="actualPhoto">
+					<img ng-src="{{cameraPic}}"/>
+				</div>
+				<div class="downBackPhoto">
+					<div class="btnRealPhoto" ng-click="App.takePicture()" ></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

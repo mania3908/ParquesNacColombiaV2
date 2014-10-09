@@ -1,0 +1,43 @@
+.backFondoTakePhoto{
+	width: 100%;
+	height: 100%;
+	background-color: #242913;
+}
+.actualPhoto{
+	width: 90%;
+	height: 85%;
+	margin: auto;
+	background-color: #d2d5d1;
+}
+.actualPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.downBackPhoto{
+	width: 100%;
+	height: 120px;
+}
+.btnRealPhoto{
+	width: 65px;
+	height: 45px;
+	background: url(../img/Big/iconCamera.png);
+	background-size: 100% 100%;
+	margin: auto;
+	margin-top: 10px;
+}
+#down-contentPhoto{
+	width: 100%;
+	height: calc(100% - 120px);
+}
+
+/* iphone 5 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+	.btnRealPhoto{width:44px; height: 31px; background: url(../img/Small/iconCamera.png);	background-size: 100% 100%; }
+	#down-contentPhoto{height: calc(100% - 80px);}
+}
+
+/* iphone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait){
+	.btnRealPhoto{width:44px; height: 31px; background: url(../img/Small/iconCamera.png);	background-size: 100% 100%; }
+	#down-contentPhoto{height: calc(100% - 80px);}
+}

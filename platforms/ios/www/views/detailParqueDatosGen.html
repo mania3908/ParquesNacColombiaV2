@@ -1,0 +1,58 @@
+<div id="home" ng-controller="detailparqueDatosGenController as App">
+	<div id="content" >
+		<div id="upMenu">
+			<div id="btnUp">
+				<div class="imgReturnUp" ng-click="back()" ></div>
+			</div>
+			<div id="areaUp">
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
+			</div>	
+			<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>	
+		</div>
+		<div id="left-bar" class="animate-show" ng-show="isHidden" >
+				<div ng-include="'views/lateralMenu.html'" class="tamplate">
+				</div>
+			</div>
+			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
+				</div>
+			</div>
+		<div id="down-content" style="height:calc(100% - 80px)">
+			<div class="conteinerMap">
+				<div class="PD-upimga">
+					<img ng-src="{{parqueDetailImage}}" alt="image" />
+					<div class="infoTitleImg">{{parqueNameDetail}}</div>
+				</div>
+				<div class="PD-downmap">
+					<div class="viewportData" style="width:70%;">
+						<p class="titleDatosGen">Datos Generales</p>
+						<div class="itemViewPort">
+							<div class="itemSInfo itemInfo1"></div>
+							<p class="txtitleUP">Altura</p>
+							<p class="actualText">{{parqueDetaildateCreation}}</p>
+						</div>
+						<div class="itemViewPort">
+							<div class="itemSInfo itemInfo2"></div>
+							<p class="txtitleUP">Extension</p>
+							<p class="actualText">{{parqueDetailextention}}</p>
+						</div>
+						<div class="itemViewPort">
+							<div class="itemSInfo itemInfo3"></div>
+							<p class="txtitleUP">Temperatura</p>
+							<p class="actualText">{{parqueDetailtemperature}}</p>
+						</div>
+						<div class="itemViewPort">
+							<div class="itemSInfo itemInfo4"></div>
+							<p class="txtitleUP">Fecha de creación</p>
+							<p class="actualText">{{parqueDetailbaseHeight}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

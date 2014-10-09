@@ -1,32 +1,28 @@
-<div id="home" ng-controller="mainController as App">
-<!--HOME QUE LE DICEN
-<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
+<div id="home" ng-controller="misfotosController as App">
 	<div id="content" >
 		<div id="upMenu">
-			<div id="btnUp">
-				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
-			</div>
+			<div id="btnUp"><div class="imgBtnUp" ng-click="App.animateLeftBar()"></div></div>
 			<div id="areaUp">
-			<!--<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
-			<div class="upSecondPart">
-				<div class="logo"></div>
-				<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
-			</div>
+				<div class="upSecondPart">
+					<div class="logo"></div>
+					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
+				</div>
 			</div>		
-			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
 		</div>
 		<div id="down-content" >
 			<div id="left-bar" class="animate-show" ng-show="isHidden" >
-				<div ng-include="'views/lateralMenu.html'" class="tamplate">
-				</div>
+				<div ng-include="'views/lateralMenu.html'" class="tamplate"></div>
 			</div>
 			<div id="right-bar" class="animate-showR" ng-show="isHiddenR">
-				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
-				</div>
+				<div ng-include="'views/lateralMenuR.html'" class="tamplate"></div>
 			</div>
-			<!--  Region de regiones -->
 			<div id="conteiner">
-				<img src="./img/misfotosBack.jpg" style="width:100%;height:100%;"/>
+				<div class="subTitleMain" ng-click="App.searchFiles()">Mis Fotos<span></span></div>
+				<div class="sContainer">
+					<div ng-class="{fotoBigMisFotos:$first}" class="contMisFotos" ng-repeat="item in misFotos.misfotos">
+						<img  ng-src="{{item.image}}" alt="thumb" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

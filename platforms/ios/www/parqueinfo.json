@@ -1,7 +1,19 @@
 {
   "parque":"Parque Lorep Ipsum",
-  "mainImage":"URL",
-  "map":"URL",
+  "mainImage":"./img/Small/mainDetailParque.jpg",
+  "map":"./img/Small/mapaDetailparque.jpg",
   "parqueId":1,
-  "regionId":1
+  "regionId":1,
+  "ecosystemas":"ecosistemas _____Lorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep Ipsum",
+  "flora":"flora____Lorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep Ipsum",
+  "fauna":"fauna_Lorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorepIpsumLorep IpsumLorep IpsumLorepIpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep Ipsum",
+  "dateCreation":"11-22/1979",
+  "extention":"200mts",
+  "temperature":"20 grados",
+  "baseHeight":"220mts",
+  "parkValue":"valor IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep ",
+  "getThere":" como llegar al parque IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep.",
+  "roads":"caminos____IpsumLorepIpsumLorepIpsumLorep IpsumLorepIpsumLorepIpsumLorep",
+  "birds":"aves del lugar IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep ",
+  "camping":" camping que le dicen IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep IpsumLorep."
 }

@@ -1,10 +1,10 @@
 {
   "parques": [
-    {"name":"Parque1","image":"./img/Small/imagenesapp/1_thumb.jpg","description":"descriptionText"},
-    {"name":"Parque2","image":"./img/Small/imagenesapp/2_thumb.jpg","description":"descriptionText2222"},
-    {"name":"Parque3","image":"./img/Small/imagenesapp/3_thumb.jpg","description":"descriptionTex333t"},
-    {"name":"Parque4","image":"./img/Small/imagenesapp/4_thumb.jpg","description":"descriptionText5"},
-    {"name":"Parque5","image":"./img/Small/imagenesapp/5_thumb.jpg","description":"descriptionText6"},
-    {"name":"Parque6","image":"./img/Small/imagenesapp/6_thumb.jpg","description":"descriptionText77777777"}
+    {"id":1,"name":"Parque1","image":"./img/Small/imagenesapp/1_thumb.jpg","description":"descriptionText"},
+    {"id":2,"name":"Parque2","image":"./img/Small/imagenesapp/2_thumb.jpg","description":"descriptionText2222"},
+    {"id":3,"name":"Parque3","image":"./img/Small/imagenesapp/3_thumb.jpg","description":"descriptionTex333t"},
+    {"id":4,"name":"Parque4","image":"./img/Small/imagenesapp/4_thumb.jpg","description":"descriptionText5"},
+    {"id":5,"name":"Parque5","image":"./img/Small/imagenesapp/5_thumb.jpg","description":"descriptionText6"},
+    {"id":6,"name":"Parque6","image":"./img/Small/imagenesapp/6_thumb.jpg","description":"descriptionText77777777"}
   ]
 }

@@ -1,23 +1,18 @@
 <div id="home" ng-controller="detailParqueMapController as App">
-<!--HOME QUE LE DICEN
-<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 	<div id="content" >
 		<div id="upMenu">
 			<div id="btnUp">
-				<div class="imgBtnUp" ng-click="App.animateLeftBar()"></div>
+				<div class="imgReturnUp" ng-click="back()" ></div>
 			</div>
 			<div id="areaUp">
-				<!--<a href="#gallery" class="btn btn-success btn-lg">gallery</a>-->
 				<div class="upSecondPart">
 					<div class="logo"></div>
 					<span class="mainTitle">Parques Nacionales Naturales de Colombia</span>
 				</div>
-				<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>
-			</div>		
-			<!--<button ng-click="App.animateLeftBar()">Show left bar</button>-->
+			</div>	
+			<div class="imgBtnPlus" ng-click="App.animateRightBar()"></div>	
 		</div>
-		<div id="down-content" >
-			<div id="left-bar" class="animate-show" ng-show="isHidden" >
+		<div id="left-bar" class="animate-show" ng-show="isHidden" >
 				<div ng-include="'views/lateralMenu.html'" class="tamplate">
 				</div>
 			</div>
@@ -25,12 +20,17 @@
 				<div ng-include="'views/lateralMenuR.html'" class="tamplate">
 				</div>
 			</div>
-			<!--  Region de regiones -->
-			<div id="conteiner">
-				<!--{{ parqueNmaeDetail.parque }}-->
-				<div  class="PD-upimga"></div>
-				<div class="PD-downmap"></div>	
+		<div id="down-content" style="height:calc(100% - 80px)">
+			<div class="conteinerMap">
+				<div class="PD-upimga">
+					<img ng-src="{{parqueDetailImage}}" alt="image" />
+					<div class="infoTitleImg">{{parqueNameDetail}}</div>
+				</div>
+				<div class="PD-downmap">
+					<img ng-src="{{parqueDetailMap}}" alt="image" />
+				</div>	
 			</div>
 		</div>
 	</div>
 </div>
+
